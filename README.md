@@ -13,7 +13,7 @@ How can i contribute?!
 ---
 
 
-#DopeHosting | DopeInfinity Footer.
+# DopeHosting | DopeInfinity Footer.
 
 * [HOME](http://dopehosting.com/)
 * [Customer-Panel](https://dopeinfinity.io/)
