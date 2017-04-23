@@ -8,7 +8,7 @@ We'll use nginx. As a webserver. And templates can be shared with community and 
 How can i contribute?!
 
 * By Creating A Pull Request.
-* If You aren't familiar with github and don't know how to. You Can place you idea at issues tab. => [/DopeHosting/nginx/issues](/issues/new)
+* If You aren't familiar with github and don't know how to. You Can place you idea at issues tab. => [CLICK](https://github.com/DopeHosting/nginx/issues/new)
 
 ---
 
