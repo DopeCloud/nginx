@@ -16,23 +16,30 @@
 # ===========================================================
 
 cdir() {
-       mkdir -p /home/$client/$domain/
-       cp -a /store/nginx/templates/public_html /home/$client/$domain/public_html
-       mkdir -p /home/$client/$domain/logs
-       mkdir -p /home/$client/$domain/ssl
-       mkdir -p /home/$client/$domain/cache
+       mkdir -p /hostdata/$client/$domain/
+       cp -a /store/nginx/templates/public_html /hostdata/$client/$domain/public_html
+       mkdir -p /hostdata/$client/$domain/logs
+       mkdir -p /hostdata/$client/$domain/ssl
+       mkdir -p /hostdata/$client/$domain/cache
 
-       chown -R $client:$client /home/$client
-       chown -R $client:$client /home/$client/$domain
-       chown -R $client:$client /home/$client/$domain/public_html
-       chown -R $client:$client /home/$client/$domain/public_html/*
-       chown -R $client:$client /home/$client/$domain/logs
-       chown -R $client:$client /home/$client/$domain/ssl
-       chown -R $client:$client /home/$client/$domain/cache
+       chown -R $domain:$domain /hostdata/$client
+       chown -R $domain:$domain /hostdata/$client/$domain
+       chown -R $domain:$domain /hostdata/$client/$domain/public_html
+       chown -R $domain:$domain /hostdata/$client/$domain/public_html/*
+       chown -R $domain:$domain /hostdata/$client/$domain/logs
+       chown -R $domain:$domain /hostdata/$client/$domain/ssl
+       chown -R $domain:$domain /hostdata/$client/$domain/cache
 
-       chown -R www-data:www-data /home/$client/$domain
-       chown -R www-data:www-data /home/$client/$domain/public_html
-       chown -R www-data:www-data /home/$client/$domain/public_html/*
+       chown -R www-data:www-data /hostdata/$client/$domain
+       chown -R www-data:www-data /hostdata/$client/$domain/public_html
+       chown -R www-data:www-data /hostdata/$client/$domain/public_html/*
+       
+       adduser $domain
+       usermod -d /hostdata/$client/$domain $domain
+       usermod -s /sbin/nologin $domain
+       # This will disable user to login on ssh.
+       # And user Can create a FTP Session via customer panel when ever they want.
+       passwd -l $domain
 }
 
 # ===========================================================
