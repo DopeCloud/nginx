@@ -1,7 +1,7 @@
 server {
         listen 80;
         server_name changeme www.changeme;
-        root /home/theclient/changeme/public_html;
+        root /hostdata/theclient/changeme/public_html;
         index index.html;
 
         #============================================
@@ -60,8 +60,8 @@ server {
         #============================================
         location / {
           resolver            8.8.8.8;
-          access_log          /home/theclient/changeme/logs/access.log upstream_time;
-          error_log           /home/theclient/changeme/logs/error.log;
+          access_log          /hostdata/theclient/changeme/logs/access.log upstream_time;
+          error_log           /hostdata/theclient/changeme/logs/error.log;
           try_files           $uri $uri/ /index.html;
         }
         #============================================
