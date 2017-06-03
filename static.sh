@@ -29,7 +29,7 @@ cdir() {
        chown -R $domain:$domain /hostdata/$client/$domain/logs
        chown -R $domain:$domain /hostdata/$client/$domain/ssl
        chown -R $domain:$domain /hostdata/$client/$domain/cache
-       chown -R $domain:$domain /nginx/live/$domain
+       chown -R $client:$client /nginx/live/$domain
 
        chown -R www-data:www-data /hostdata/$client/$domain
        chown -R www-data:www-data /hostdata/$client/$domain/public_html
