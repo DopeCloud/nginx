@@ -15,9 +15,9 @@ How can i contribute?!
 
 # Footer.
 
-* [HOME](http://dopehosting.com/)
-* [Customer-Panel](https://dopeinfinity.io/)
+* [HOME](https://dopehosting.net/)
+* [Customer-Panel](https://dopehosting.net/)
 
 How can i order? You can't as you can see our home page isn't live yet. Because we're working with our control panel. Because everything will be created by us. No CPanel/WHM. No Plesk Panel.
 
-But To try our service on trial plan you can contact (raw@systemroot.me)
+But To try our service on trial plan you can contact (raw@dopehosting.net)
